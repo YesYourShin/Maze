@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TextManager : MonoBehaviour
 {
     [SerializeField] private Text StartText;
-    [SerializeField]private float timer;
+    [SerializeField] private float timer;
     private bool count;
     private bool first;
 

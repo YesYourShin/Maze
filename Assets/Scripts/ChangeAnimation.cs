@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChangeAnimation : MonoBehaviour
 {
     List<string> animArray;
     Animation anim;
-    bool collision;
+    public bool isTrigger;
     // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animation>(); 
+        anim = gameObject.GetComponent<Animation>();
         animArray = new List<string>();
 
         foreach (AnimationState state in anim) 
@@ -22,14 +23,14 @@ public class ChangeAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!collision)
+        if (!isTrigger)
         {
             anim.Play(animArray[2]);
         }
     }
     private void OnTriggerEnter(Collider other)
     {
-        collision = true;
+        isTrigger = true;
     }
     private void OnTriggerStay(Collider other)
     {
@@ -38,7 +39,7 @@ public class ChangeAnimation : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        collision = false;
+        isTrigger = false;
     }
 
 }
