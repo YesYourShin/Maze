@@ -8,6 +8,7 @@ public class ChangeAnimation : MonoBehaviour
     List<string> animArray;
     Animation anim;
     public bool isTrigger;
+    public PlayerCountSword cnt;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +31,22 @@ public class ChangeAnimation : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        isTrigger = true;
+        if (cnt.countSword == cnt.totalSword && other.CompareTag("Player"))
+        {
+
+        } else
+        {
+
+            isTrigger = true;
+        }
     }
     private void OnTriggerStay(Collider other)
     {
-        anim.Play(animArray[1]);
+        if (cnt.countSword != cnt.totalSword)
+        {
+
+            anim.Play(animArray[1]);
+        }
     }
 
     private void OnTriggerExit(Collider other)

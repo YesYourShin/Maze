@@ -7,6 +7,7 @@ public class GameOver : MonoBehaviour
 {
     public Image gameOver;
     [SerializeField] private float timer;
+    public PlayerCountSword cnt;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class GameOver : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Mob"))
+        if (cnt.countSword != cnt.totalSword && other.CompareTag("Mob"))
         {
             Debug.Log("데미지 받는 중");
             timer += Time.deltaTime;
