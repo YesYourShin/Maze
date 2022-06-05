@@ -25,7 +25,7 @@ public class GetSword : MonoBehaviour
         {
             cnt.countSword++;
             Destroy(gameObject);
-            count.text = "드래곤 나이프 : " + cnt.countSword + " / " + cnt.totalSword;
+            count.text = "ドラゴンナイフ : " + cnt.countSword + " / " + cnt.totalSword;
         }
     }
 }

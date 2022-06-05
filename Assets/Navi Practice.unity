@@ -10371,6 +10371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTrigger: 0
   cnt: {fileID: 1237684252}
+  Explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!65 &872800981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10424,8 +10425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 150.2, y: 28.8}
-  m_SizeDelta: {x: 271.8, y: 41.7}
+  m_AnchoredPosition: {x: 172.9, y: 28.8}
+  m_SizeDelta: {x: 297.4, y: 41.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &874037429
 MonoBehaviour:
@@ -10460,7 +10461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB4DC\uB798\uACE4 \uB098\uC774\uD504 : 0 / 4"
+  m_Text: "\u30C9\u30E9\u30B4\u30F3\u30CA\u30A4\u30D5 : 0 / 4"
 --- !u!222 &874037430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25023,7 +25024,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBA851\uAC80\uC744 \uC5BB\uC5B4 \uC6CC\uB9AC\uC5B4\uB97C \uACF5\uACA9\uD558\uC790"
+  m_Text: "\u540D\u5200\u3092\u96C6\u3081\u30A6\u30A9\u30EA\u30A2\u30FC\u3092\u653B\u6483\u3057\u3088\u3046\uFF01"
 --- !u!222 &1993424717
 CanvasRenderer:
   m_ObjectHideFlags: 0

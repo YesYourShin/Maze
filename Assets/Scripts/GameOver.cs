@@ -24,7 +24,6 @@ public class GameOver : MonoBehaviour
     {
         if (cnt.countSword != cnt.totalSword && other.CompareTag("Mob"))
         {
-            Debug.Log("데미지 받는 중");
             timer += Time.deltaTime;
             if (timer >= 4.0f)
             {

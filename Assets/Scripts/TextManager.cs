@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,7 +33,7 @@ public class TextManager : MonoBehaviour
 
         if(cnt.countSword == cnt.totalSword && first)
         {
-            StartText.text = "°ø°Ý¸ðµå";
+            StartText.text = "æ”»æ’ƒãƒ¢ãƒ¼ãƒ‰";
             StartText.enabled = true;
             count = true;
             first = false;
