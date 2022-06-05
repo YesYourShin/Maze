@@ -22,6 +22,7 @@ public class GameWin : MonoBehaviour
     {
         if(cnt.countSword == cnt.totalSword && other.CompareTag("Mob"))
         {
+
             gameWin.enabled = true;
         }
     }

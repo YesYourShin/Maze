@@ -9,6 +9,7 @@ public class ChangeAnimation : MonoBehaviour
     Animation anim;
     public bool isTrigger;
     public PlayerCountSword cnt;
+    public GameObject Explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +34,8 @@ public class ChangeAnimation : MonoBehaviour
     {
         if (cnt.countSword == cnt.totalSword && other.CompareTag("Player"))
         {
-
+            Instantiate(Explosion, transform.position, transform.rotation);
+            Destroy(gameObject);
         } else
         {
 
